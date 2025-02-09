@@ -29,7 +29,7 @@ def load_data(df, table_name="customers"):
     conn.close()
 
 def run_etl():
-    df = extract_data("data/customers.csv")
+    df = extract_data("data\customers.csv")
     df = transform_data(df)
     load_data(df)
 
